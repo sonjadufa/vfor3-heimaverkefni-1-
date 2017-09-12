@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Verkefni 1, dæmi 2</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="heimaverkefni1daemi2.css">
+</head>
+<body>
+	
+	<div id="app">
+		<input type="text" id="texti">
+		
+		<a id="googleLink" href="notrequired" onclick="this.href='http://www.google.com/search?q=' + encodeURIComponent(document.getElementById('texti').value);">
+    		<button>Smelltu til að leita</button>
+		</a>
+	</div>
+	
+	<script src="https://unpkg.com/vue"></script>
+	<script type="text/javascript">
+
+		var minntexti = document.getElementById("texti").value
+		var app = new Vue ({
+			el: '#app',
+			data: {
+
+			}
+		});
+	</script>
+
+</body>
+</html>
